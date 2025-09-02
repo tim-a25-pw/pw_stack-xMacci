@@ -1,16 +1,19 @@
-.spacing_section {
+.section {
     padding-top: var(--spacing-xxxl);
-}
-.athletes {
-    text-align: right;
+
     color: var(--color-a);
-    .wrapper {
+
+    .section_header {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
         h2 {
             color: var(--color-a);
         }
         p {
             text-align: right;
-            max-width: 40%;
+            width: 52%;
         }
     }
 }
