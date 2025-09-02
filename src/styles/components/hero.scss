@@ -1,0 +1,66 @@
+.hero {
+    height: 80vh;
+    position: relative;
+    .wrapper {
+        .hero_medias {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 80vh;
+            z-index: 1;
+            img {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+            }
+            @media screen and (max-width: $breakpoint-sm) {
+                height: 60vh;
+            }
+        }
+        .hero_content {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: var(--spacing-xl);
+            height: 80vh;
+            width: 40%;
+            h1,
+            p,
+            a {
+                margin: 0;
+                padding: 0;
+            }
+            p {
+                color: var(--color-a-sec);
+                display: block;
+            }
+            @media screen and (max-width: $breakpoint-lg) {
+                width: 70%;
+            }
+            @media screen and (max-width: $breakpoint-md) {
+                width: 80%;
+                gap: var(--spacing-xxl);
+                p {
+                    width: 80%;
+                }
+            }
+            @media screen and (max-width: $breakpoint-sm) {
+                justify-content: space-around;
+                gap: var(--spacing-xl);
+
+                height: 60vh;
+                p {
+                    display: none;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: $breakpoint-sm) {
+        height: 60vh;
+    }
+}

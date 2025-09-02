@@ -1,0 +1,11 @@
+.logo {
+    color: var(--color-a);
+    font-size: 40px;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xl);
+    svg {
+        color: var(--color-primary);
+    }
+}

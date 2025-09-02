@@ -6,10 +6,44 @@
     --font-primary: 'Nunito', sans-serif;
     --font-secondary: 'PT Sans', sans-serif;
 
-    --font-size-content: 1.8rem;
+    --font-size-content: #{typo(14px, 18px)};
 
     /// Grosseur des textes
-    --font-size-h1: 10rem;
-    --font-size-h2: 7rem;
-    --font-size-h3: 3.5rem;
+    --font-size-h1: #{typo(65px, 100px)};
+    --font-size-h2: #{typo(30px, 50px)};
+    --font-size-h3: #{typo(25px, 35px)};
+    --font-size-h3: #{typo(16px, 22px)};
+    --font-size-a: #{typo(13px, 14px)};
+    --font-size-button: #{typo(14px, 16px)};
+}
+h1 {
+    font-size: var(--font-size-h1);
+    font-weight: 300;
+    font-family: var(--font-primary);
+}
+span .titre {
+    font-weight: 700;
+}
+h2 {
+    font-family: var(--font-primary);
+    font-size: var(--font-size-h2);
+    font-weight: 600;
+}
+h3 {
+    font-family: var(--font-primary);
+    font-size: var(--font-size-h3);
+    line-height: 120%;
+    font-weight: 600;
+}
+h4 {
+    font-family: var(--font-secondary);
+    font-size: var(--font-size-h4);
+    font-weight: 700;
+    line-height: 100%;
+}
+p {
+    font-size: var(--font-size-content);
+    line-height: 150%;
+    font-weight: 400;
+    font-family: var(--font-secondary);
 }

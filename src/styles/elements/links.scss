@@ -16,3 +16,15 @@ a {
         color: #e2e2e2;
     }
 }
+a {
+    font-family: var(--font-primary);
+    font-size: var(--font-size-a);
+    line-height: 20px;
+    font-weight: 700;
+}
+a.button {
+    font-family: var(--font-primary);
+    font-size: var(--font-size-button);
+    line-height: 30px;
+    font-weight: 900;
+}

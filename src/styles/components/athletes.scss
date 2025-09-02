@@ -1,0 +1,16 @@
+.spacing_section {
+    padding-top: var(--spacing-xxxl);
+}
+.athletes {
+    text-align: right;
+    color: var(--color-a);
+    .wrapper {
+        h2 {
+            color: var(--color-a);
+        }
+        p {
+            text-align: right;
+            max-width: 40%;
+        }
+    }
+}
