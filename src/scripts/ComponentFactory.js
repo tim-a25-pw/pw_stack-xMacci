@@ -1,7 +1,9 @@
+import Carousel from './components/Carousel';
 export default class ComponentFactory {
   constructor() {
-    this.componentInstances = [];
-    this.componentList = {};
+    this.componentList = {
+      Carousel,
+    };
     this.init();
   }
   init() {
@@ -10,12 +12,10 @@ export default class ComponentFactory {
     for (let i = 0; i < components.length; i++) {
       const element = components[i];
       const componentName = element.dataset.component;
-
       if (this.componentList[componentName]) {
-        const instance = new this.componentList[componentName](element);
-        this.componentInstances.push(instance);
+        new this.componentList[componentName](element);
       } else {
-        console.log(`La composante ${componentName} n'existe pas`);
+        console.log(`La composante ${componentName}'existe pas`);
       }
     }
   }
