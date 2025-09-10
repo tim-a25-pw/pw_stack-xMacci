@@ -15,5 +15,10 @@
             text-align: right;
             width: 52%;
         }
+        @media screen and (max-width: $breakpoint-md) {
+            p {
+                width: 100%;
+            }
+        }
     }
 }

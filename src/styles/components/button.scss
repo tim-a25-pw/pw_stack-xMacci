@@ -1,0 +1,19 @@
+.button {
+    padding: 10px 30px !important;
+    color: var(--color-primary);
+    border: 3px solid var(--color-primary);
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    @media screen and (max-width: $breakpoint-md) {
+        width: 60%;
+    }
+    @media screen and (max-width: $breakpoint-xs) {
+        width: 100%;
+    }
+}
+.limte_btn {
+    display: inline-flex;
+}

@@ -1,4 +1,4 @@
-import Carousel from './components/Carousel';
+import Carousel from './components/Carousel.js';
 export default class ComponentFactory {
   constructor() {
     this.componentList = {

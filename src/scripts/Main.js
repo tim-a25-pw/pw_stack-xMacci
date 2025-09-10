@@ -9,8 +9,8 @@ class Main {
   init() {
     document.documentElement.classList.add('has-js');
 
-    Icons.load();
     new ComponentFactory();
+    Icons.load();
   }
 }
 
